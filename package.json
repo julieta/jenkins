@@ -4,7 +4,8 @@
   "description": "cypress, prueba para jenkins",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --e2e --browser chrome"
+    "test": "npx cypress run --e2e --browser chrome",
+    "generateTXT": "node generateConsoleReport.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/julieta/jenkins#readme",
   "dependencies": {
-    "cypress": "^13.6.4"
+    "cypress": "^13.6.4",
+    "mochawesome": "^7.1.3"
   }
 }
