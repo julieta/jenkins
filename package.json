@@ -1,0 +1,26 @@
+{
+  "name": "jenkins",
+  "version": "1.0.0",
+  "description": "cypress, prueba para jenkins",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --e2e --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julieta/jenkins.git"
+  },
+  "keywords": [
+    "jenkins",
+    "cypress"
+  ],
+  "author": "Darwoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julieta/jenkins/issues"
+  },
+  "homepage": "https://github.com/julieta/jenkins#readme",
+  "dependencies": {
+    "cypress": "^13.6.4"
+  }
+}
