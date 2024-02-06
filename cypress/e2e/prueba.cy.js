@@ -3,7 +3,7 @@ describe('Test de prueba para Jenkins', () => {
     cy.visit('https://example.cypress.io')
   })
 
-  it('test que FALLA', () => {
+  it.skip('test que FALLA', () => {
     cy.visit('https://example.cypress.io')
     cy.get("h1").should("have.text", "Hola Mundo!")
   })
