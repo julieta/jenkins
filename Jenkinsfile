@@ -1,6 +1,11 @@
 pipeline{
     agent any
     stages{
+        stage('Clone sources') {
+             steps {
+                 git url: 'https://github.com/julieta/jenkins.git',  branch: 'main'
+            }
+        }
         stage('Instalacion de Dependencia'){
             bat 'npm ci'
         }
