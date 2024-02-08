@@ -7,7 +7,9 @@ pipeline{
             }
         }
         stage('Instalacion de Dependencia'){
-            bat 'npm ci'
+            steps {
+                bat 'npm ci'
+            }
         }
 
         stage('Ejecucion de Test'){
