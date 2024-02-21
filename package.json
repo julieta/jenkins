@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --e2e --browser chrome || ver>nul",
+    "test2": "npx cypress run --e2e --browser firefox --env grepTags=\"@pasara @fallara\"",
     "generateTXT": "node generateConsoleReport.js"
   },
   "repository": {
@@ -22,6 +23,7 @@
   },
   "homepage": "https://github.com/julieta/jenkins#readme",
   "dependencies": {
+    "@cypress/grep": "^4.0.1",
     "cypress": "^13.6.4",
     "mochawesome": "^7.1.3"
   }
